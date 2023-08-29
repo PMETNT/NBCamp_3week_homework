@@ -3,12 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="100dp">
+    android:layout_height="100dp"
+    android:background="#EF9A9A">
 
     <ImageView
-        android:id="@+id/item_photo"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:id="@+id/bookmark_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginStart="20dp"
         android:src="@drawable/user1"
 
@@ -17,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/item_name"
+        android:id="@+id/bookmark_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
 
@@ -27,27 +28,29 @@
         app:layout_constraintBottom_toBottomOf="parent"
 
 
-        app:layout_constraintStart_toEndOf="@+id/item_photo"
+        app:layout_constraintStart_toEndOf="@+id/bookmark_photo"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/item_phonenumber"
+        android:id="@+id/bookmark_phonenumber"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:gravity="center_vertical"
         android:text="전화번호"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/item_name"
+        app:layout_constraintStart_toEndOf="@+id/bookmark_name"
         app:layout_constraintTop_toTopOf="parent"
 
         />
 
     <Switch
-        android:id="@+id/item_radioButton"
+        android:id="@+id/bookmark_radioButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
+        android:checked="true"
+
 
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
